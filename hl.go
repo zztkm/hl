@@ -16,7 +16,7 @@ func main() {
 		Usage:   "get header list.",
 		Version: "0.1.0",
 		Action: func(c *cli.Context) error {
-			f, err := os.Open("test.csv")
+			f, err := os.Open("testdata/test.csv")
 			if err != nil {
 				log.Fatal(err)
 			}
